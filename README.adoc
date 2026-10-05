@@ -1,19 +1,57 @@
-= Build an Neo4j-backed Chatbot using Python
+= LLM Chatbot with Python and Neo4j
 
-This repository accompanies the link:https://graphacademy.neo4j.com/courses/llm-chatbot-python/?ref=github[Build an Neo4j-backed Chatbot using Python^] course on link:https://graphacademy.neo4j.com/?ref=github[Neo4j GraphAcademy^].
+This repository contains a Python-based LLM chatbot project used as a learning and prototyping foundation during a one-week collaboration with Johnson Electric as part of the Academia-Industry Modeling (AIM) course in 2024. The work was carried out in collaboration with ETH Zurich and the University of Zurich.
 
-For a complete walkthrough of this repository, link:https://graphacademy.neo4j.com/courses/llm-chatbot-python/?ref=github[enrol now^].
+The project is based on a Neo4j-backed chatbot tutorial and was adapted for experimentation with LLM-based question answering, graph retrieval, and conversational interfaces. It demonstrates how a language model can be connected to a knowledge graph to ground responses in structured context.
 
+== Project objective
 
-== Running the application
+The repository explores the integration of a large language model with a graph database for question answering. The goal is to provide context-aware responses by combining conversational AI with graph-based retrieval and structured knowledge.
 
-To run the application, you must install the libraries listed in `requirements.txt`.
+== Key features
+
+- Python-based chatbot implementation
+- Neo4j knowledge graph integration
+- LLM-driven response generation
+- Retrieval-augmented reasoning workflow
+- Streamlit user interface
+- Modular project structure for experimentation and extension
+
+== Technologies
+
+- Python
+- Streamlit
+- LangChain
+- Neo4j
+- OpenAI models
+- Graph-based retrieval and conversational AI workflows
+
+== Project structure
+
+- `agent.py` — agent orchestration and tool use
+- `bot.py` — Streamlit chatbot application
+- `graph.py` — Neo4j connection setup
+- `llm.py` — LLM configuration
+- `tools/` — retrieval and query utilities
+- `utils.py` — helper logic and session management
+- `examples/` — example application files
+- `solutions/` — reference implementations and completed examples
+- `requirements.txt` — project dependencies
+
+== Setup
+
+Install the required dependencies:
 
 [source,sh]
 pip install -r requirements.txt
 
-
-Then run the `streamlit run` command to start the app on link:http://localhost:8501/[http://localhost:8501/^].
+Run the application:
 
 [source,sh]
 streamlit run bot.py
+
+The application requires the relevant Neo4j and model credentials to be configured in the local environment.
+
+== Notes
+
+This repository was used as a practical learning resource and prototyping environment within the AIM collaboration. It is intended to illustrate an LLM + knowledge graph workflow in a structured and accessible way.
